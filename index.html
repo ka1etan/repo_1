@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MapApp">
+<head><title>Angular Tst</title>
+<style type="text/css" media="screen">@import 'css.css';</style>
+<script src="angular.js"></script> 
+<script src="varia.js"></script> 
+</head>
+<body ng-controller="MapListController"><center><div id="boxx"><div id="aform"><div id="boxx2">
+	<fieldset>
+		 <label>
+                Map:		
+				
+					
+					<div id="map">
+					  
+
+    <ul>
+      <li ng-repeat="location in locations">
+        <span>{{location.mapname}}</span>
+        <p>{{location.timelimit}}</p>
+		
+      </li>
+    </ul></div>
+	<p><select><option ng-repeat="location in locations">{{location.mapname}}</option></select>
+	</p>
+					
+            </label></fieldset>
+
+</div></div></center>
+
+</body>
+</html>
+
